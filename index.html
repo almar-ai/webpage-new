@@ -38,11 +38,9 @@
 								</ul>
 							</li>
 							<!-- Selector de idioma -->
-							<li class="submenu">
-								<select id="language-selector" onchange="changeLanguage(event)">
-									<option value="es">Español</option>
-									<option value="en">English</option>
-								</select>
+							<li>
+								<button class="button primary" data-lang="es" onclick="changeLanguage('es')">Español</button>
+								<button class="button primary" data-lang="en" onclick="changeLanguage('en')">English</button>
 							</li>
 						</ul>
 					</nav>
