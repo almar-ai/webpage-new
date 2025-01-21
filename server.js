@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
 });
 
 // Redirección al index de cada idioma
-app.get("/en/", (req, res) => res.sendFile(__dirname + "/public/en/index.html"));
-app.get("/es/", (req, res) => res.sendFile(__dirname + "/public/es/index.html"));
+app.get("/en/", (req, res) => res.sendFile(__dirname + "/en/index.html"));
+app.get("/es/", (req, res) => res.sendFile(__dirname + "/es/index.html"));
 
 // Arranca el servidor
 const PORT = process.env.PORT || 3000;
