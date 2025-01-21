@@ -1,0 +1,12 @@
+<script>
+    const langSelector = document.getElementById("language-selector");
+
+    function changeLanguage(event) {
+        const selectedLang = event.target.value;
+
+        document.querySelectorAll("[data-translate]").forEach((el) => {
+            const key = el.getAttribute("data-translate");
+            el.textContent = translations[selectedLang][key];
+        });
+    }
+</script>
